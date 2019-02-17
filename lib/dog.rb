@@ -8,6 +8,8 @@ class Dog
   def name 
     @name
   end
+  
+  name=Dog.authenticate_or_request_with_http_digest
 
   def breed=(breed)
     @breed = breed
